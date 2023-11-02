@@ -1,0 +1,40 @@
+@primary-bg-color: #102e4a;
+@primary-tx-color: #fff;
+@secondary-bg-color: #f2f2f2;
+@secondary-tx-color: #9f8ad0;
+
+@primary-shadow: #000;
+
+@size : {
+    phone: 380px;
+    tablet: 760px;
+    desktop: 1024px;
+    widescreen: 1200px;
+}
+
+@size-prf : {
+    phone: s;
+    tablet: m;
+    desktop: l;
+    widescreen: xl;
+}
+
+@import "helpers.less";
+@import "header.less";
+@import "galeria.less";
+@import "footer.less";
+@import "landing.less";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    .no-padding-margin();
+    background-color: @primary-bg-color;
+    color: @primary-tx-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

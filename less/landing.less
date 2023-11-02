@@ -1,0 +1,66 @@
+main {
+    flex: 1 1 auto;
+    padding:0.5rem 1rem;
+    background-color: @secondary-bg-color;
+    color: @secondary-tx-color;
+    min-width:100vh;
+}
+
+.hero-panel {
+    position:relative;
+    height: 380px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -0.5rem;
+    overflow: hidden;
+    @media  (min-width: @size[tablet]) {
+        height: 640px;
+    }
+    h1 {
+        position: absolute;
+        top:30%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    img {
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .large-btn {
+        position: absolute;
+        top:60%;
+        left:50%;
+        transform: translateX(-50%);
+        background-color: @primary-bg-color;
+        color: @primary-tx-color;
+        border-radius: 25px;
+        border: 1px solid darken(@primary-bg-color, 20%);
+        text-decoration:none;
+        padding: 1rem 1.5rem;
+    }
+}
+
+.card-container {
+    display: flex;
+    max-width:  @size[desktop];
+    margin: 1rem auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+        width:318px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        background-color: @secondary-bg-color;
+        box-shadow: 3px 3px 5px @primary-shadow;
+        .card-image {
+            width:100%;
+            height:220px;
+            img {
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

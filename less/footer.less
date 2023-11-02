@@ -1,0 +1,39 @@
+footer {
+	width: 100%;
+	text-align: center;
+	padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+	.redes {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 1.5rem auto;
+		width: 100%;
+        margin-top: 0.75rem;
+		li {
+			display: block;
+            margin: 0.5rem;
+			
+
+			a {
+				text-decoration: none;
+				padding: 0.75rem;
+				background-color: @secondary-bg-color;
+				border-radius: 0.75rem;
+				color: @primary-bg-color;
+				cursor: pointer;
+				transition: all 0.5 ease-in;
+				text-decoration: none;
+				list-style: none;
+
+				&:hover {
+					color: @primary-tx-color;
+					background-color: @secondary-tx-color;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<section class="gallery" id="portafolio">
+	<div>
+		<h2>Galería</h2>
+		<div class="contenedor-galeria">
+			{{#each galeria}}
+				<figure style="{{colorTitulo}}">
+					<h3>{{autor}}</h3>
+					<img src="{{imagen}}" alt="{{altImg}}" class="img-galeria" />
+					<figcaption style="{{colorText}}">{{pensamiento}}</figcaption>
+				</figure>
+			{{/each}}
+		</div>
+	</div>
+</section>
+
+<section class="imagen-light">
+	<i class="fas fa-times close"></i>
+	<img src="./img/img-3.jpg" alt="" class="agregar-imagen" />
+</section>
